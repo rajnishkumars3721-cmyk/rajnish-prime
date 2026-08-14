@@ -1,54 +1,60 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to RAJNISH PRIME show</title>
-  <script src="https://jsdelivr.net"></script>
-</head>
-<body class="bg-black text-white antialiased min-h-screen flex flex-col justify-center items-center p-4">
-  <div class="max-w-md w-full mx-auto px-4 text-center">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RAJNISH PRIME</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body class="antialiased min-h-screen text-white overflow-x-hidden bg-[#0a0f0d] flex flex-col items-center">
     
-    <!-- Main Profile Logo -->
-    <div class="relative w-32 h-32 mx-auto mb-6">
-      <img src="https://ibb.co" alt="Rajnish Prime Logo" class="w-full h-full object-cover rounded-full border-4 border-green-400 shadow-2xl">
+    <!-- Navigation Menu Button -->
+    <div class="w-full max-w-md px-4 pt-4 flex justify-start">
+      <button class="p-3 bg-[#121c17] border border-emerald-500/20 rounded-xl text-emerald-400 shadow-md">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
     </div>
-    
-    <h1 class="text-3xl font-extrabold tracking-tight mb-1">Welcome to</h1>
-    <h1 class="text-4xl font-black text-green-400 tracking-wide mb-4">RAJNISH PRIME show</h1>
-    <p class="text-base text-gray-400 font-medium mb-8">Entertainment & Education For Everyone</p>
-    
-    <!-- Channels List -->
-    <div class="w-full space-y-3">
-      <a href="https://t.me" target="_blank" class="flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-green-500 rounded-xl p-3 shadow-lg">
-        <div class="flex items-center space-x-4">
-          <img src="https://ibb.co" alt="PW" class="w-12 h-12 rounded-lg object-cover">
-          <span class="font-bold text-base">Physics Wallah</span>
-        </div>
-      </a>
+
+    <!-- Main Header Section -->
+    <header class="flex flex-col items-center text-center px-4 mt-4">
+      <!-- Panda / Logo Icon -->
+      <div class="w-24 h-24 mb-4 flex items-center justify-center bg-emerald-500/10 rounded-full border border-emerald-500/20 shadow-[0_0_30px_rgba(16,185,129,0.15)]">
+        <img src="https://i.ibb.co/xq944DMC/studypanda.jpg" alt="Logo" class="w-20 h-20 rounded-full object-cover">
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-2">
+        Welcome to <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-300">RAJNISH PRIME</span>
+      </h1>
       
-      <a href="https://t.me" target="_blank" class="flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-green-500 rounded-xl p-3 shadow-lg">
-        <div class="flex items-center space-x-4">
-          <img src="https://ibb.co" alt="Next Toppers" class="w-12 h-12 rounded-lg object-cover">
-          <span class="font-bold text-base">Next Toppers</span>
-        </div>
-      </a>
+      <!-- Subtitle -->
+      <p class="text-gray-400 text-sm md:text-base font-medium mb-8">
+        Education Must Be <span class="text-emerald-400 font-semibold">Free</span> For Everyone
+      </p>
+    </header>
 
-      <a href="#" target="_blank" class="flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-green-500 rounded-xl p-3 shadow-lg">
-        <div class="flex items-center space-x-4">
-          <img src="https://ibb.co" alt="Unacademy" class="w-12 h-12 rounded-lg object-cover">
-          <span class="font-bold text-base">Unacademy</span>
+    <!-- Batches Cards Grid -->
+    <main class="w-full max-w-md px-4 grid grid-cols-2 gap-4 pb-10">
+      
+      <!-- Physics Wallah Card -->
+      <div class="bg-[#111814] border border-emerald-500/20 rounded-2xl p-4 flex flex-col items-center text-center shadow-lg hover:border-emerald-500/40 transition-all cursor-pointer">
+        <div class="w-16 h-16 bg-[#18241e] border border-emerald-500/30 rounded-xl flex items-center justify-center mb-3 shadow-inner">
+          <span class="text-emerald-400 font-bold text-lg">PW</span>
         </div>
-      </a>
+        <h2 class="text-sm md:text-base font-bold text-gray-200">Physics Wallah</h2>
+      </div>
 
-      <a href="#" target="_blank" class="flex items-center justify-between bg-zinc-900 border border-zinc-800 hover:border-green-500 rounded-xl p-3 shadow-lg">
-        <div class="flex items-center space-x-4">
-          <img src="https://ibb.co" alt="Rojgar With Ankit" class="w-12 h-12 rounded-lg object-cover">
-          <span class="font-bold text-base">Rojgar With Ankit</span>
+      <!-- Next Toppers Card -->
+      <div class="bg-[#111814] border border-emerald-500/20 rounded-2xl p-4 flex flex-col items-center text-center shadow-lg hover:border-emerald-500/40 transition-all cursor-pointer">
+        <div class="w-16 h-16 bg-[#18241e] border border-emerald-500/30 rounded-xl flex items-center justify-center mb-3 shadow-inner">
+          <i class="fa-solid fa-bolt text-emerald-400 text-xl"></i>
         </div>
-      </a>
-    </div>
+        <h2 class="text-sm md:text-base font-bold text-gray-200">Next Toppers</h2>
+      </div>
 
-  </div>
-</body>
+    </main>
+
+  </body>
 </html>
